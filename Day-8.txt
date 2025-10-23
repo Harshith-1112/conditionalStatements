@@ -1,0 +1,147 @@
+Day-8
+
+18/10/2025
+
+Control Statements or flow control
+
+
+                      Flow Control
+
+Conditional Statements        looping or iterative      jumping statements
+-if                             -while                    - break
+-switch                         -do while                 - continue
+                                -for
+                                -enhanced for loop
+                                       (or)
+                                    for each
+
+Introduction:
+
+Control flow statements in java allow you to control the follow of your program based on conditions. the if statement is one of the fundamental control flow constructs enables you to make decision in your code.
+
+Basic if statements:
+
+The basic if statement evaluates Boolean expression and executes a block of code if the expression evaluates true.
+
+Syntax:
+
+if(condition){
+// code to be executed if condition is true;
+}
+
+
+if-else Statement:
+the if-else statement provides an alternative path of execution when the if condition evaluates false.
+
+Syntax:
+if(condition){
+// code to be executed if the condition is true
+}else{
+// code to be executed if the condition is false.
+}
+
+
+Question:
+
+Write a Java program to simulate an ATM withdrawal process.
+The program should:
+
+Ask the user to enter the withdrawal amount.
+
+Check if the entered amount is less than or equal to the account balance (initially 1000).
+
+If the balance is sufficient, deduct the withdrawal amount and display the remaining balance.
+
+Otherwise, display the message "Insufficient funds."
+
+
+if-else ladder statement:
+
+when you need to check multiple conditions. you can use if-else if-else statement.
+
+Syntax:
+
+if(condition1){
+	else if(condition2){
+	}else if(condition3{
+	} elseif (condition4){
+	}else{
+	}
+}      
+//it is not a valid syntax
+
+Syntax:
+
+if(condition1){
+	// code to be executed if condition1 is true
+	else{
+	  if(condition2){
+	// code to be executed if condition1 is false and condition2 is true
+          }else{
+		if(condition3){
+	// code to be executed if condition1 and condition2 is false and condition3 is true
+		}else{
+	// code to be executed if all condition1 is false
+	}
+    }
+}
+//recommended 
+
+
+Question:
+
+* Write a Java program to simulate traffic light behavior using nested if-else statements.
+The program should take:
+
+A light state (Green, Yellow, or Red)
+
+The hour (0-23 in 24-hour format) and display the vehicle's action based on these rules:
+
+If the light is Green, the action is "Go".
+If the light is Red, the action is "Stop".
+If the light is Yellow:
+During daytime (6 Am to 6PM)→ "Slow"
+During nighttime "Stop"
+
+
+* Write a Java program to calculate the final price of an airline ticket based on the following conditions:
+
+The base price of the ticket is ₹5000.
+The final price is affected by:
+
+Passenger Type:
+"child": 50% discount
+"senior": 20% discount
+"adult": No discount
+Any other input: show error and terminate.
+
+Booking Time:
+"early": 10% discount
+"normal": No change
+"last-minute": 20% extra charge
+Any other input: show error and terminate.
+
+Membership Status:
+
+If the passenger is a member, they get an additional 5% discount on the final price.
+Display the final ticket price after all applicable discounts/surcharges...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
